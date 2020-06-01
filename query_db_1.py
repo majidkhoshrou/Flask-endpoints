@@ -7,11 +7,12 @@ Created on Mon Jun  1 17:42:14 2020
 
 @ns.route('/target_emotion_metrics_ui2db/<search_term>, <platforms>', methods=['GET'])
 @ns.doc(params={"search_term":"Enter a search terms, e.g., shimano", "platforms":"twitter, instagram, blogs, news or all"})
+
 class query_db(Resource):
     
     """
     An easily configurable endpoint to access data from the sql database.
-    Resource is an extrenal class! 
+    Resource is an extrenal class!  search_term and platforms are two columns of the table in database.
     """
 
     def get(self, search_term, platforms): 
