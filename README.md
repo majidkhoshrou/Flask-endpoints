@@ -1,26 +1,14 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<h1>Examples of API endpoints </h1>
+<p>These are a few examples of endpoints to access and process data from various resources.</p>
 
 </body>
 </html>
 
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
-</body>
-</html>
 
