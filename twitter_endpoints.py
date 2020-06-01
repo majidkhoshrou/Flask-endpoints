@@ -45,8 +45,6 @@ class GetTargetMovementTwitter(Resource):
 
 
 
-
-## http://benalexkeen.com/interacting-with-the-twitter-api-using-python/
 @ns.route('/twitter_trends/<woe_id>', methods=['GET'])
 @ns.doc(params={"woe_id":"Enter a woe id, e.g., 733075"})
 class TwitterTrends(Resource):
@@ -55,6 +53,8 @@ class TwitterTrends(Resource):
         """
         Get request that returns top current trends on twitter for a given place. 
         The Where On Earth ID  (WOEID) should be provided.
+        More info in http://benalexkeen.com/interacting-with-the-twitter-api-using-python/
+
         """
         
         consumer_key = config.twitter_api_credentials["consumer_key"]
