@@ -6,12 +6,13 @@ Created on Mon Jun  1 17:45:45 2020
 """
 
 
-@ns.route('/ui_keyhole_batched_data/<search_term>', methods=['GET'])
+@ns.route('/name of endpoint/<input argument>', methods=['GET'])
 @ns.doc(params={"search_term":"Enter a search term, e.g., shimano"})
 class query_db_2(Resource):
     
     """
-    An endpoint to access data from database. For more info see https://docs.microsoft.com/en-us/sql/connect/python/pyodbc/step-3-proof-of-concept-connecting-to-sql-using-pyodbc?view=sql-server-ver15
+    An endpoint to access data from database. 
+    For more info see https://docs.microsoft.com/en-us/sql/connect/python/pyodbc/step-3-proof-of-concept-connecting-to-sql-using-pyodbc?view=sql-server-ver15
 
     """
 
