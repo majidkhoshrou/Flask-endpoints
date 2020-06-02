@@ -14,7 +14,7 @@ class GetTargetMovementTwitter(Resource):
         """
         GET request to retrieve tweets.
 
-        result_type can be most popular or recent or mixed tweets containing a hashtag or keyword.
+        "result_type" can be popular, recent or mixed tweets containing a hashtag or keyword.
         For the free Twitter API access, only the data for the past seven days are available.
         """
         consumer_key = config.twitter_api_credentials["consumer_key"]
