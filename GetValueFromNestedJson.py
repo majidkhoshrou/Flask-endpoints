@@ -8,6 +8,44 @@ Created on Thu Jun  4 10:13:40 2020
 # Query all the resources in talkwalker
 # See https://apidocs.talkwalker.com/#_how_to_get_the_ids_of_talkwalker_topics
 
+#How to get the IDs of Talkwalker topics?
+#To get a list of the topics defined in a Talkwalker project use the project_id and the access_token on the https://api.talkwalker.com/api/v2/talkwalker/p/<project_id>/resources endpoint. Optionally, the filter type can be set if we want to obtain only search-topics: type=search
+#
+#curl -XGET 'https://api.talkwalker.com/api/v2/talkwalker/p/<project_id>/resources?access_token=<access_token>&type=search'
+#The result, using the above filter, has the form:
+#
+#{
+#  "status_code" : "0",
+#  "status_message" : "OK",
+#  "request" : "GET /api/v3/talkwalker/p/<project_id>/resources?access_token=<access_token>&type=search",
+#  "result_resources" : {
+#    "projects" : [ {
+#      "id" : "<project_id>",
+#      "title" : "Air France",
+#      "topics" : [ {
+#        "id" : "2p1nevfo_121244b12ade",
+#        "title" : "Category 1",
+#        "nodes" : [ {
+#          "id" : "l9gb1vj7_9utd4cawszq7",
+#          "title" : "topic 1"
+#        }, {
+#          "id" : "g8wf5sd4_8svs0cfghje8",
+#          "title" : "topic 2"
+#        } ]
+#      }, {
+#        "id" : "kj241kj4_h214jhv21l2a",
+#        "title" : "Catergory 2",
+#        "nodes" : [ {
+#          "id" : "w6fc8sf4_4fds6hdgsjd1",
+#          "title" : "topic 1"
+#        } ]
+#      } ]
+#    } ]
+#  }
+#}
+#To get results for all projects in 'search' use search as topic ID. To use a single topic, use the ID of the topic (for example w6fc8sf4_4fds6hdgsjd1 for topic 1 of category 2).
+#
+
 import requests
 import json
  url = '*****'
