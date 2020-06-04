@@ -3,7 +3,7 @@
 <html>
 <body>
 
-<h1>Examples of API endpoints </h1>
+<h1>A few functions to get data from database ot APIs </h1>
 <p>These are a few examples of endpoints to access and process data from various resources.</p>
 
 </body>
